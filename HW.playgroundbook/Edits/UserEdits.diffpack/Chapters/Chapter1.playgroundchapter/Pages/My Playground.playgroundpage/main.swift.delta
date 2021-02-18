@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+func evenNumberOrNot (value: Int) {
+    let number = value
+    let div = number % 2
+    div == 0 ? print("\(value) делится на два") : print("\(value) не делится на два")
+}
+evenNumberOrNot(value: 10) // например
+
+
+
+func dividedOrNot (value: Int) {
+    let number = value
+    let div = number % 3
+    div == 0 ? print("\(value) это число делится без остатка на 3") : print("\(value) это число НЕ делится без остатка на 3")
+}
+dividedOrNot(value: 12) // например
+
+
+
+// Создать возрастающий массив из 100 чисел.
+
+var array = [Int]()
+var i = 0
+
+while i&lt;100 {
+    array.append(i+1)
+    i += 1
+}
+print(array)
+
+// Удалить из этого массива все четные числа и все числа, которые не делятся на 3.
+
+var deleted = array.filter{$0 % 2 != 0 &amp;&amp; $0 % 3 != 0}
+print(deleted)
+
+// долго пыхтел с индекс (поиском) и ремувом (удалением), компилияор никак не мог выдать верное решение. По итогу, в гугле нашел .фильтр и применил к заданию, вроде получилось.
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 952}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
